@@ -1,0 +1,25 @@
+[project]
+name = "projet-mlbio"
+version = "0.1.0"
+description = "Application de la méthode weighted voting de Golub au jeu de données WDBC"
+readme = "README.md"
+authors = [
+    { name = "Aurelien", email = "aurelien.ricaud@epita.fr" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+]
+
+[project.scripts]
+projet-mlbio = "projet_mlbio:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
